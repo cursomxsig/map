@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+	<table search="false" identify="true" buffer="true" user_alias="Manzanas 2015"
+		projects="inv2015">
+		<server>inv2015</server>
+		<database>inv2015</database>
+		<schema>inv1214</schema>
+		<name>manzanas</name>
+		<icon_size>7</icon_size>
+		<alias>manzanas2015</alias>
+		<geometry>geom_merc</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.149291070</min>
+			<max>19.109257067</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>cvegeo</name>
+				<alias>cvegeo</alias>
+			</field>
+	
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio   -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true" user_alias="Frentes de manzanas 2015" projects="inv2015">
+		<server>inv2015</server>
+		<database>inv2015</database>
+		<schema>inv1214</schema>
+		<name>frentes_2015</name>
+		<alias>frentes2015</alias>
+		<geometry>geom_merc</geometry>
+		<projection>900913</projection>
+		<resolution>
+		<min>0.149291070</min>
+		<max>19.109257067</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>cvegeo</name>
+				<alias>cvegeo</alias>
+			</field>
+			<field>
+				<name>cveft</name>
+				<alias>cveft</alias>
+			</field>
+			<field>
+				<name>cvevial</name>
+				<alias>cvevial</alias>
+			</field>
+			<field>
+				<name>tipovial</name>
+				<alias>tipo de vialidad</alias>
+			</field>
+			<field identify="true">
+				<name>nomvial</name>
+				<alias>Nombre</alias>
+			</field>			
+		
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="false" identify="true" buffer="true" user_alias="Manzanas 2012"
+		projects="inv2015">
+		<server>inv2015</server>
+		<database>inv2015</database>
+		<schema>inv2012</schema>
+		<name>manzanas</name>
+		<icon_size>7</icon_size>
+		<alias>manzanas2012</alias>
+		<geometry>geom_merc</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.149291070</min>
+			<max>19.109257067</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>cvegeo</name>
+				<alias>cvegeo</alias>
+			</field>
+			</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>	
+<table search="true" identify="true" buffer="true" user_alias="Entidad federativa"
+                               projects="inv2015">
+                               <server>inv2015</server>
+                               <database>inv2015</database>
+                               <schema>inv1214</schema>
+                               <name>estatal_2015</name>
+                               <alias>c100</alias>
+                               <geometry>geom_merc</geometry>
+                               <projection>900913</projection>
+                               <resolution>
+                                               <min>0.149291070</min>
+                                               <max>4891.969809375</max>
+                               </resolution>
+                       
+                               <fields>
+                                               <field identify="true">
+                                                               <name>gid</name>
+                                                               <alias>ID</alias>
+                                               </field>
+                                               <field>
+                                                               <name>cve_ent</name>
+                                                               <alias>Clave geoestadística</alias>
+                                               </field>
+                                               <field identify="true">
+                                                               <name>nomgeo</name>
+                                                               <alias>Nombre</alias>
+                                               </field>
+                                                                            
+                               </fields>
+                               <search>
+                                               <!-- el primer field segun definido aqui es el obligatorio -->
+                                               <field type="tsearch">
+                                                               <name>spvector</name>
+                                               </field>
+                               </search>
+                               <orderby>
+                                               <field>cve_ent</field>
+                               </orderby>
+                </table>
+                <table search="true" identify="true" buffer="true"
+                               user_alias="Municipio/Delegación" projects="inv2015">
+                               <server>inv2015</server>
+                               <database>inv2015</database>
+                               <schema>inv1214</schema>
+                               <name>municipal_2015</name>
+                               <alias>c101</alias>
+                               <geometry>geom_merc</geometry>
+                               <projection>900913</projection>
+                               <resolution>
+                                               <min>0.149291070</min>
+                                               <max>4891.969809375</max>
+                               </resolution>
+                                     <fields>
+                                               <field identify="true">
+                                                               <name>gid</name>
+                                                               <alias>ID</alias>
+                                               </field>
+                                               <field>
+                                                               <name>cvegeo</name>
+                                                               <alias>Clave geoestadística</alias>
+                                               </field>
+                                               <field identify="true">
+                                                               <name>nomgeo</name>
+                                                               <alias>Nombre</alias>
+                                               </field>
+                                             
+                                                                                        
+                                          
+                               </fields>
+                               <search>
+                                               <!-- el primer field segun definido aqui es el obligatorio -->
+                                               <field type="tsearch">
+                                                               <name>spvector</name>
+                                               </field>
+                               </search>
+                </table>
+                <table search="true" identify="true" buffer="true" user_alias="Localidad"
+                               projects="inv2015">
+                               <server>inv2015</server>
+                               <database>inv2015</database>
+                               <schema>inv1214</schema>
+                               <name>localidad_2015</name>
+                               <alias>c102</alias>
+                               <geometry>geom_merc</geometry>
+                               <projection>900913</projection>
+                               <resolution>
+                                                <min>0.149291070</min>
+                                               <max>4891.969809375</max>
+                               </resolution>
+                               <fields>
+                                               <field identify="true">
+                                                               <name>gid</name>
+                                                               <alias>ID</alias>
+                                               </field>
+                                               <field>
+                                                               <name>cvegeo</name>
+                                                               <alias>Clave geoestadística</alias>
+                                               </field>
+                                               <field identify="true">
+                                                               <name>nomgeo</name>
+                                                               <alias>Nombre</alias>
+                                               </field>
+                                      
+                                            
+                               </fields>
+                               <search>
+                                               <!-- el primer field segun definido aqui es el obligatorio -->
+                                               <field type="tsearch">
+                                                               <name>spvector</name>
+                                               </field>
+                                               <field type="tsearch">
+                                                               <name>spvectorref</name>
+                                               </field>
+                               </search>
+                </table>
+	
+	
+	
+</tables>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<servers>
+
+	<server>
+		<alias>test</alias>
+		<ip>10.1.30.101</ip>
+		<port>5432</port>
+		<user>adma</user>
+		<password>sps5619</password>
+		<url>jdbc:postgresql://%s:%s/%s</url>
+		<driverClass>org.postgresql.Driver</driverClass>
+		<validationQuery>select version()</validationQuery>
+	</server>
+
+	<server>
+		<alias>servidorsote</alias>
+		<ip>10.152.11.16</ip>
+		<port>5433</port>
+		<user>uscarga</user>
+		<password>Carplus</password>
+		<url>jdbc:postgresql://%s:%s/%s</url>
+		<driverClass>org.postgresql.Driver</driverClass>
+		<validationQuery>select version()</validationQuery>
+	</server>
+
+	<server>
+		<alias>servidorgeodesia</alias>
+		<ip>10.152.11.12</ip>
+		<port>5433</port>
+		<user>adma</user>
+		<password>Adm8412</password>
+		<url>jdbc:postgresql://%s:%s/%s</url>
+		<driverClass>org.postgresql.Driver</driverClass>
+		<validationQuery>select version()</validationQuery>
+	</server>
+	
+	<server>
+		<alias>inv2015</alias>
+		<ip>10.153.3.6</ip>
+		<port>5432</port>
+		<user>inv1214_pro</user>
+		<password>inv1214_pro2015</password>
+		<url>jdbc:postgresql://%s:%s/%s</url>
+		<driverClass>org.postgresql.Driver</driverClass>
+		<validationQuery>select version()</validationQuery>
+	</server>
+
+</servers>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allow-origin>
+	<origin>http://mdm5beta.inegi.org.mx</origin>
+	<origin>http://10.28.13.184</origin>
+	<origin>http://10.28.13.179</origin>
+	<origin>http://10.106.12.12</origin>
+	<origin>http://10.106.12.7</origin>
+	<origin>http://10.106.12.177</origin>
+	<origin>http://10.153.3.5</origin>
+	<origin>http://gaia.inegi.org.mx</origin>
+	<origin>http://gaia2.inegi.org.mx</origin>
+	<origin>http://10.29.4.3</origin>			 
+	<origin>http://localhost</origin>
+	<origin>http://10.1.8.66</origin><!-- ODS -->
+	<origin>http://10.29.4.180</origin><!-- ODS -->
+    <origin>http://10.106.12.7</origin> <!--CHUY -->
+	<origin>http://10.106.12.91</origin><!--PERLA -->
+	<origin>http://10.106.12.90</origin> <!--MANY-->
+	<origin>http://10.106.12.163</origin><!--JUAN -->
+	<origin>http://10.106.12.205</origin><!--RUBEN -->
+</allow-origin>

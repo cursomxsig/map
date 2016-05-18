@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+
+    <table search="false" identify="true" buffer="true" user_alias="denue"
+		projects="mdm6; denue">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>denue2014</schema>
+		<name>denue2014</name>
+		<alias>cdenue</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.2985821421883884</min>
+			<max>4.777314267188194</max>
+		</resolution>	
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>nom_est</name>
+				<alias>name</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>			
+		</fields>		
+	</table>
+
+</tables>

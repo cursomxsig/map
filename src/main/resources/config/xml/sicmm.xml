@@ -1,0 +1,2735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+
+<table search="true" identify="true" buffer="true"
+		user_alias="Unidades Hidrogeológicas" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>zonas_hidrogeologicas</schema>
+		<name>unidades_hidrogeologicas</name>
+		<alias>c450</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>descripcio</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true" user_alias="Aeropuertos"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>comytrans</schema>
+		<name>aeropuertos</name>
+		<alias>c201</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>305.748113085</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>nombre</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true"
+		user_alias="Uso de suelo y vegetación serie V" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>usuev_s5_mercator</name>
+		<alias>cusv5</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>tip_ecov</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>tip_info</name>
+				<alias>Tipo de Agroecosistema</alias>
+			</field>	
+			<field>
+				<name>tip_veg</name>
+				<alias>Tipo de vegetación</alias>
+			</field>
+			<field>
+				<name>desveg</name>
+				<alias>Clases</alias>
+			</field>
+			<field>
+				<name>fase_vs</name>
+				<alias>Fase</alias>
+			</field>			
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+	<table search="false" identify="true" buffer="true"
+		user_alias="Territorio insular - Arrecifes" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>territorioinsular</schema>
+		<name>arrecifes</name>
+		<alias>c795</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>1222.992452343</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>nom</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>mar</name>
+				<alias>Mar</alias>
+			</field>
+			<field>
+				<name>tipo</name>
+				<alias>Tipo</alias>
+			</field>
+			<field>
+				<name>geologia</name>
+				<alias>Geología</alias>
+			</field>
+			<field>
+				<name>entidad</name>
+				<alias>Nombre del estado</alias>
+			</field>
+			<field>
+				<name>municipio</name>
+				<alias>Nombre del municipio</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="false" identify="true" buffer="true"
+		user_alias="Territorio insular - Oceánicos costeros" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>territorioinsular</schema>
+		<name>oceanicoscosteros</name>
+		<alias>c793</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>2445.984904687</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>nom</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>mar</name>
+				<alias>Mar</alias>
+			</field>
+			<field>
+				<name>tipo</name>
+				<alias>Tipo</alias>
+			</field>
+			<field>
+				<name>geologia</name>
+				<alias>Geología</alias>
+			</field>
+			<field>
+				<name>entidad</name>
+				<alias>name del estado</alias>
+			</field>
+			<field>
+				<name>municipio</name>
+				<alias>Nombre del municipio</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+	<table search="true" identify="true" buffer="true" user_alias="Suelos"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>suelos_s2_250k</name>
+		<alias>c416</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>n_g1</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>n_g2</name>
+				<alias>Suelo secundario</alias>
+			</field>
+			<field>
+				<name>n_g3</name>
+				<alias>Suelo terciario</alias>
+			</field>
+			<field>
+				<name>textura</name>
+				<alias>Textura</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="false" user_alias="Red nacional de caminos"
+		projects="mdm6;denue">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>comytrans</schema>
+		<name>rnc</name>
+		<alias>c200</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>campohtml</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>id_red</name>
+				<alias>Identificador</alias>
+			</field>
+			<field>
+				<name>tipo</name>
+				<alias>Tipo</alias>
+			</field>
+			<field>
+				<name>estatus_pa</name>
+				<alias>Estatus de pavimentado</alias>
+			</field>
+			<field>
+				<name>recubri</name>
+				<alias>Recubrimiento</alias>
+			</field>
+			<field >
+				<name>desc_sup</name>
+				<alias>Descripción de superficie</alias>
+			</field>
+			<field>
+				<name>carriles</name>
+				<alias>Número de carriles</alias>
+			</field>
+			<field>
+				<name>condicion</name>
+				<alias>Funcionamiento</alias>
+			</field>
+			<field>
+				<name>cond_const</name>
+				<alias>Condición de la construcción</alias>
+			</field>
+			<field>
+				<name>nivel_f</name>
+				<alias>Nivel</alias>
+			</field>
+			<field>
+				<name>circula</name>
+				<alias>Circulación</alias>
+			</field>
+			<field>
+				<name>ancho_f</name>
+				<alias>Ancho (mts)</alias>
+			</field>
+			<field>
+				<name>fecha_act_f</name>
+				<alias>Fecha de actualización</alias>
+			</field>
+			<field>
+				<name>calirepr</name>
+				<alias>Calificador de posición</alias>
+			</field>			
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+			<field type="tsearch">
+				<name>spvectorref</name>
+			</field>
+		</search>
+	</table>
+	<table search="true" identify="true" buffer="true" user_alias="Cuerpos de agua"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>hidroinfra</schema>
+		<name>cuerposagua50k_dissolve</name>
+		<alias>c311</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>38.218514135</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>condicion</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true" user_alias="Corrientes de agua"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>hidroinfra</schema>
+		<name>corriente_ag50_l_vw</name>
+		<alias>c310</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>152.874056542</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>condicion</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true"
+		user_alias="Nombres de Localidades" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>nombresgeograficos</schema>
+		<name>toponimoslo</name>
+		<alias>c350</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>76.437028271</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field>
+				<name>nom_edo</name>
+				<alias>Estado</alias>
+			</field>
+			<field>
+				<name>nom_mun</name>
+				<alias>Municipio</alias>
+			</field>
+			<field>
+				<name>nom_clase</name>
+				<alias>Clase</alias>
+			</field>
+			<field identify="true">
+				<name>nom_50</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>nom_gen</name>
+				<alias>Tipo</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+			<field type="tsearch">
+				<name>spvectorref</name>
+			</field>
+		</search>
+	</table>
+<table search="false" identify="true" buffer="true" user_alias="Sitio de disposición final de residuos sólidos urbanos"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>emedioambiente</schema>
+		<name>sdf</name>
+		<alias>csdf</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>	
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>nombre</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>clave_2011</name>
+				<alias>Clave del sitio de disposición final de residuos sólidos urbanos</alias>
+			</field>
+			<field>
+				<name>cve_ent</name>
+				<alias>Clave de la entidad</alias>
+			</field>
+			<field>
+				<name>nombre_ent</name>
+				<alias>Nombre de la entidad</alias>
+			</field>
+			<field>
+				<name>cve_mun</name>
+				<alias>Clave del municipio</alias>
+			</field>
+			<field>
+				<name>nombre_mun</name>
+				<alias>Nombre del municipio</alias>
+			</field>
+			<field>
+				<name>tipodisp</name>
+				<alias>Tipo de disposición de residuos sólidos urbanos</alias>
+			</field>
+			<field>
+				<name>latitud</name>
+				<alias>Latitud</alias>
+			</field>
+			<field>
+				<name>longitud</name>
+				<alias>Longitud</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+            <field search_display="false" query_display="true">
+			<functions>
+				<function order="2">
+					<fname>ST_AsText</fname>
+				</function>
+				<function order="1">
+					<fname>ST_Envelope</fname>
+				</function>
+			</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>					
+		</fields>		
+	</table>
+<table search="true" identify="true" buffer="true"
+		user_alias="Municipio/Delegación" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>mgmv51</schema>
+		<name>municipal</name>
+		<alias>c101</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>305.748113098</max>
+		</resolution>
+		<totals>
+			<sql alias='totales'>
+			    select
+				sum( cast( pobtot as numeric ) ) as "Población total",
+				sum( cast( pobmas as numeric ) ) as "Población masculina",
+				sum( cast( pobfem as numeric ) ) as "Población femenina",
+				sum( cast( vivtot as numeric ) ) as "Total viviendas",
+				sum( cast( tvivhab as numeric ) ) as "Total viviendas habitadas",
+				sum( cast( pob0_14 as numeric ) )as "Población de 0 a 14 años",
+				sum( cast( pob15_64 as numeric ) ) as "Población de 15 a 65 años",
+				sum( cast( pob65_mas as numeric ) ) as "Población de 65 años y mas"
+				from datosestadisticos.mun
+				THEWHERE
+			</sql>
+		</totals>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>clavegeo</name>
+				<alias>Clave geoestadística</alias>
+			</field>
+			<field identify="true">
+				<name>nom_mun</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>nom_ent</name>
+				<alias>referencia</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			
+			<!--<field link="II Conteo de Pob. y Viv.|/CubexConnector/generaJson.do?servicio=infoproyecto&amp;proyecto=1&amp;geograficaE="> 
+				<name>clavegeo</name> <alias>destadisticos</alias> </field> <field link="Natalidad 
+				1985-2005|/CubexConnector/generaJson.do?servicio=infoproyecto&amp;proyecto=3&amp;geograficaE="> 
+				<name>clavegeo</name> <alias>destadisticos</alias> </field> <field link="Transporte|/CubexConnector/generaJson.do?servicio=infoproyecto&amp;proyecto=4&amp;geograficaE="> 
+				<name>clavegeo</name> <alias>destadisticos</alias> </field> -->
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true" user_alias="Entidad federativa"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>mgmv51</schema>
+		<name>estados</name>
+		<alias>c100</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<totals>
+			<sql alias='totals'>
+				select
+				sum( cast( pobtot as numeric ) ) as "Población total",
+				sum( cast( pobmas as numeric ) ) as "Población masculina",
+				sum( cast( pobfem as numeric ) ) as "Población femenina",
+				sum( cast( vivtot as numeric ) ) as "Total viviendas",
+				sum( cast( tvivhab as numeric ) ) as "Total viviendas habitadas",
+				sum( cast( pob0_14 as numeric ) )as "Población de 0 a 14 años",
+				sum( cast( pob15_64 as numeric ) ) as "Población de 15 a 65 años",
+				sum( cast( pob65_mas as numeric ) ) as "Población de 65 años y mas"
+				from datosestadisticos.ent
+				THEWHERE
+			</sql>
+		</totals>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>cve_ent</name>
+				<alias>Clave geoestadística</alias>
+			</field>
+			<field identify="true">
+				<name>nom_ent</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field
+				link="http://geoweb.inegi.org.mx/WSCBuscador/MuestraMetadatos.jsp?par2=INEGI1,par1=">
+				<name>id_metadato</name>
+				<alias>metadato</alias>
+			</field>
+
+			<!-- si field no especifica atributos de search_display y query_display, 
+				ambos son true por default -->
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+		<orderby>
+			<field>cve_ent</field>
+		</orderby>
+	</table>
+<table search="true" identify="true" buffer="true"
+		user_alias="Localidades puntuales" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>localidadesmzn</schema>
+		<name>localidades_puntuales</name>
+		<alias>c103</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>9.554628533</max>
+		</resolution>
+		<totals>
+			<sql alias='totales'>
+				select
+				sum( cast( pobtot as numeric ) ) as "Población total",
+				sum( cast( pobmas as numeric ) ) as "Población masculina",
+				sum( cast( pobfem as numeric ) ) as "Población femenina",
+				sum( cast( vivtot as numeric ) ) as "Total viviendas",
+				sum( cast( tvivhab as numeric ) ) as "Total viviendas habitadas",
+				sum( cast( pob0_14 as numeric ) )as "Población de 0 a 14 años",
+				sum( cast( pob15_64 as numeric ) ) as "Población de 15 a 65 años",
+				sum( cast( pob65_mas as numeric ) ) as "Población de 65 años y mas"
+				from datosestadisticos.locrur
+				THEWHERE
+			</sql>
+		</totals>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>cvegeo</name>
+				<alias>Clave geoestadística</alias>
+			</field>
+			<field identify="true">
+				<name>nomgeo</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>busqueda</name>
+				<alias>Entidad, Municipio</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<!-- <field link="II Conteo de Pob. y Viv.|/CubexConnector/generaJson.do?servicio=infoproyecto&amp;proyecto=1&amp;geograficaE="> 
+				<name>clavegeo</name> <alias>destadisticos</alias> </field> -->
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+			<field type="tsearch">
+				<name>spvectorref</name>
+			</field>
+		</search>
+	</table>
+	<table search="true" identify="true" buffer="true" user_alias="Servicios"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>localidadesmzn</schema>
+		<name>servicios_a</name>
+		<alias>c110</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>76.437028271</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>geografico</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="false" identify="true" buffer="true"
+		user_alias="Números Exteriores Urbano" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>localidadesmzn</schema>
+		<name>numeroexteriorurbano</name>
+		<alias>t700</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<fields>
+			<field>
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>domicilio</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>tipovial</name>
+				<alias>Tipo de vialidad</alias>
+			</field>
+			<field>
+				<name>nomvial</name>
+				<alias>Nombre de la vialidad</alias>
+			</field>
+			<field>
+				<name>numextnum</name>
+				<alias>Número</alias>
+			</field>
+			<field>
+				<name>nomref1</name>
+				<alias>Entrevialidad 1</alias>
+			</field>
+			<field>
+				<name>nomref2</name>
+				<alias>Entrevialidad 2</alias>
+			</field>			
+			<field>
+				<name>entmunloc</name>
+				<alias>Entidad, Municipio, Localidad</alias>
+			</field>
+			<!--<field link="II Conteo de Pob. y Viv.|/CubexConnector/generaJson.do?servicio=infoproyecto&amp;proyecto=1&amp;geograficaE="> 
+				<name>clavegeo</name> <alias>destadisticos</alias> </field> -->
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch" dictionary="inegi" convertf="conviertenumext">
+				<name>spvector</name>
+			</field>
+			<field type="tsearch" dictionary="inegi" convertf="conviertenumext">
+				<name>spvectorref</name>
+			</field>
+			<!-- <field type="tsearch" dictionary="spanish" convertf="convierte"> 
+				<name>spvector</name> </field> <field type="tsearch" dictionary="spanish" 
+				convertf="conviertenumext"> <name>spvectorref</name> </field> -->
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true" user_alias="Calles"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>denue2014</schema>
+		<name>e</name>
+		<alias>c112</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4.777314266</max>
+		</resolution>
+		<fields>		
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field>
+				<name>tipovial</name>
+				<alias>Tipo</alias>
+			</field>
+			<field identify="true">
+				<name>nomvial</name>
+				<alias>Nombre</alias>
+			</field>
+			<field identify="true">
+				<name>entmunloc</name>
+				<alias>Entidad, Municipio, Localidad</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio dictionary="inegi" 
+				convertf="convierte3" -->
+			<field type="tsearch" dictionary="inegi" convertf="convierte3">
+				<name>spvector</name>
+			</field>
+			<field type="tsearch" dictionary="inegi" convertf="convierte3">
+				<name>spvectorref</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true" user_alias="Localidad"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>localidadesmzn</schema>
+		<name>localidad_mgn_multi</name>
+		<alias>c102</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>152.874056542</max>
+		</resolution>
+		<totals>
+			<sql alias='totales'>
+				select
+				sum( cast( pobtot as numeric ) ) as "Población total",
+				sum( cast( pobmas as numeric ) ) as "Población masculina",
+				sum( cast( pobfem as numeric ) ) as "Población femenina",
+				sum( cast( vivtot as numeric ) ) as "Total viviendas",
+				sum( cast( tvivhab as numeric ) ) as "Total viviendas habitadas",
+				sum( cast( pob0_14 as numeric ) )as "Población de 0 a 14 años",
+				sum( cast( pob15_64 as numeric ) ) as "Población de 15 a 65 años",
+				sum( cast( pob65_mas as numeric ) ) as "Población de 65 años y mas"
+				from datosestadisticos.locurb
+				THEWHERE
+			</sql>
+		</totals>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>cvegeo</name>
+				<alias>Clave geoestadística</alias>
+			</field>
+			<field identify="true">
+				<name>nomgeo</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<!--<field link="II Conteo de Pob. y Viv.|/CubexConnector/generaJson.do?servicio=infoproyecto&amp;proyecto=1&amp;geograficaE="> 
+				<name>clavegeo</name> <alias>destadisticos</alias> </field> -->
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+			<field type="tsearch">
+				<name>spvectorref</name>
+			</field>
+		</search>
+	</table>
+	
+	<table search="false" identify="true" buffer="true"
+		user_alias="Humedales potenciales" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>humedales_250k</name>
+		<alias>c787</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field>
+				<name>area</name>
+				<alias>Área</alias>
+			</field>
+			<field>
+				<name>perimeter</name>
+				<alias>Perímetro</alias>
+			</field>
+			<field>
+				<name>descrip</name>
+				<alias>Nombre de la región</alias>
+			</field>
+			<field>
+				<name>cuerpo_h2o</name>
+				<alias>Tipo de cuerpo de agua</alias>
+			</field>
+			<field>
+				<name>corriente</name>
+				<alias>Tipo de corriente</alias>
+			</field>
+			<field>
+				<name>estado</name>
+				<alias>Estado</alias>
+			</field>
+			<field identify="true">
+				<name>nomhumedal</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>nom_cuenca</name>
+				<alias>Cuenca hidrológica</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+	</table>
+	
+<table search="true" identify="true" buffer="true"
+		user_alias="Sistema de topoformas" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>sistema_topoformas250k</name>
+		<alias>c414</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>nombre</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="true"
+		user_alias="Provincias fisiograficas" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>provincias_fisiograficas250k</name>
+		<alias>c411</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>nombre</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+	<table search="true" identify="true" buffer="false" user_alias="Movimientos en masa"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>fenomenos_geologicos</schema>
+		<name>infg_mvm</name>
+		<alias>c464</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>o_espacial</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>clase</name>
+				<alias>Clase</alias>
+			</field>
+			<field>
+				<name>subclase</name>
+				<alias>Subclase</alias>
+			</field>
+			<field>
+				<name>detonante</name>
+				<alias>Factor detonante</alias>
+			</field>
+			<field>
+				<name>pre_anual</name>
+				<alias>Precipitación anual</alias>
+			</field>
+			<field>
+				<name>volumen</name>
+				<alias>Volumen</alias>
+			</field>
+			<field>
+				<name>afectacion</name>
+				<alias>Afectación</alias>
+			</field>
+			<field>
+				<name>litologia</name>
+				<alias>Litología</alias>
+			</field>
+			<field>
+				<name>estructura</name>
+				<alias>Estructura</alias>
+			</field>
+			<field>
+				<name>latitud</name>
+				<alias>Latitud</alias>
+			</field>
+			<field>
+				<name>longitud</name>
+				<alias>Longitud</alias>
+			</field>
+			<field>
+				<name>entidad</name>
+				<alias>Nombre del estado</alias>
+			</field>
+			<field>
+				<name>municipio</name>
+				<alias>Clave de municipio o delegación</alias>
+			</field>
+			<field>
+				<name>localidad</name>
+				<alias>Localidad</alias>
+			</field>
+			<field>
+				<name>toponimo</name>
+				<alias>Topónimo</alias>
+			</field>
+			<field>
+				<name>registro</name>
+				<alias>Registro</alias>
+			</field>
+			<field>
+				<name>regi_histo</name>
+				<alias>Registro histórico</alias>
+			</field>
+			<field>
+				<name>f_inf</name>
+				<alias>Fuente de información</alias>
+			</field>
+			<field>
+				<name>observa</name>
+				<alias>Observación</alias>
+			</field>
+			<field>
+				<name>representa</name>
+				<alias>Calificador de posición</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch" dictionary="inegi">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="false" user_alias="Inundación (área)"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>fenomenos_geologicos</schema>
+		<name>infg_indpg</name>
+		<alias>c463</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field>
+				<name>factor</name>
+				<alias>Factor</alias>
+			</field>
+			<field>
+				<name>precipita</name>
+				<alias>Precipitación</alias>
+			</field>
+			<field>
+				<name>nivel</name>
+				<alias>Nivel de agua</alias>
+			</field>
+			<field>
+				<name>tiempo</name>
+				<alias>Tiempo</alias>
+			</field>
+			<field identify="true">
+				<name>magnitud</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>afectacion</name>
+				<alias>Afectación</alias>
+			</field>
+			<field>
+				<name>sup_afecta</name>
+				<alias>Superficie afectada</alias>
+			</field>
+			<field>
+				<name>per_eco</name>
+				<alias>Pérdida económica</alias>
+			</field>
+			<field>
+				<name>entidad</name>
+				<alias>Nombre del estado</alias>
+			</field>
+			<field>
+				<name>municipio</name>
+				<alias>Clave de municipio o delegación</alias>
+			</field>
+			<field>
+				<name>localidad</name>
+				<alias>Localidad</alias>
+			</field>
+			<field>
+				<name>registro</name>
+				<alias>Registro</alias>
+			</field>
+			<field>
+				<name>regi_histo</name>
+				<alias>Registro histórico</alias>
+			</field>
+			<field>
+				<name>f_inf</name>
+				<alias>Fuente de información</alias>
+			</field>
+			<field>
+				<name>observa</name>
+				<alias>Observación</alias>
+			</field>
+			<field>
+				<name>representa</name>
+				<alias>Calificador de posición</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch" dictionary="inegi">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+
+<table search="true" identify="true" buffer="false" user_alias="Inundación"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>fenomenos_geologicos</schema>
+		<name>infg_ind</name>
+		<alias>c462</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field>
+				<name>factor</name>
+				<alias>Factor</alias>
+			</field>
+			<field>
+				<name>precipita</name>
+				<alias>Precipitación</alias>
+			</field>
+			<field>
+				<name>nivel</name>
+				<alias>Nivel de agua</alias>
+			</field>
+			<field>
+				<name>tiempo</name>
+				<alias>Tiempo</alias>
+			</field>
+			<field identify="true">
+				<name>magnitud</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>afectacion</name>
+				<alias>Afectación</alias>
+			</field>
+			<field>
+				<name>sup_afecta</name>
+				<alias>Superficie afectada</alias>
+			</field>
+			<field>
+				<name>per_eco</name>
+				<alias>Pérdida económica</alias>
+			</field>
+			<field>
+				<name>latitud</name>
+				<alias>Latitud</alias>
+			</field>
+			<field>
+				<name>longitud</name>
+				<alias>Longitud</alias>
+			</field>
+			<field>
+				<name>entidad</name>
+				<alias>Nombre del estado</alias>
+			</field>
+			<field>
+				<name>municipio</name>
+				<alias>Clave de municipio o delegación</alias>
+			</field>
+			<field>
+				<name>localidad</name>
+				<alias>Localidad</alias>
+			</field>
+			<field>
+				<name>registro</name>
+				<alias>Registro</alias>
+			</field>
+			<field>
+				<name>regi_histo</name>
+				<alias>Registro histórico</alias>
+			</field>
+			<field>
+				<name>f_inf</name>
+				<alias>Fuente de información</alias>
+			</field>
+			<field>
+				<name>observa</name>
+				<alias>Observación</alias>
+			</field>
+			<field>
+				<name>representa</name>
+				<alias>Calificador de posición</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch" dictionary="inegi">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+<table search="true" identify="true" buffer="false" user_alias="Erosión costera"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>fenomenos_geologicos</schema>
+		<name>infg_ecr</name>
+		<alias>c461</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field>
+				<name>causa</name>
+				<alias>Causa</alias>
+			</field>
+			<field identify="true">
+				<name>desgaste</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>latitud</name>
+				<alias>Latitud</alias>
+			</field>
+			<field>
+				<name>longitud</name>
+				<alias>Longitud</alias>
+			</field>
+			<field>
+				<name>entidad</name>
+				<alias>Nombre del estado</alias>
+			</field>
+			<field>
+				<name>municipio</name>
+				<alias>Clave de municipio o delegación</alias>
+			</field>
+			<field>
+				<name>localidad</name>
+				<alias>Localidad</alias>
+			</field>
+			<field>
+				<name>toponimo</name>
+				<alias>Topónimo</alias>
+			</field>
+			<field>
+				<name>registro</name>
+				<alias>Registro</alias>
+			</field>
+			<field>
+				<name>f_inf</name>
+				<alias>Fuente de información</alias>
+			</field>
+			<field>
+				<name>observa</name>
+				<alias>Observación</alias>
+			</field>
+			<field>
+				<name>representa</name>
+				<alias>Calificador de posición</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch" dictionary="inegi">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+	<table search="false" identify="true" buffer="true" user_alias="Curvas de Nivel"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt50</database>
+		<schema>altimetria</schema>
+		<name>ccun50</name>
+		<alias>c206</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>9.554628533</max>
+		</resolution>
+		<totals>
+			<sql alias='TOTAL POR ELEVACION'>
+				select elevacion as	descripcion,
+				count(elevacion) as total
+				from altimetria.ccun50
+				THEWHERE
+				group by elevacion
+				order by elevacion
+			</sql>
+		</totals>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>elevacion</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+	
+<table search="false" identify="true" buffer="true"
+		user_alias="Unidades climáticas" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>unidades_climaticas250k</name>
+		<alias>c418</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>form_clim</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+	</table>
+	<table search="false" identify="true" buffer="true"
+		user_alias="Temperatura media anual " projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>temperatura_media_anual250k</name>
+		<alias>c417</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>clave</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+	</table>
+<table search="false" identify="true" buffer="true"
+		user_alias="Precipitación media anual" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>precipitacion_media_anual250k</name>
+		<alias>c410</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>clave</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="1">
+						<fname>ST_AsText</fname>
+					</function>
+				</functions>
+				<name>the_envelope</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+	</table>
+<table search="false" identify="true" buffer="true" user_alias="Evapotranspiración"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>evapotraspiracion250k</name>
+		<alias>c404</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>evapotra</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+	</table>
+	
+<table search="true" identify="true" buffer="true"
+		user_alias="Catálogo de localidades rurales vigentes" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>catentmunloc</schema>
+		<name>catalogoemlvigentes</name>
+		<alias>c790</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>152.874056542</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field>
+				<name>clave</name>
+				<alias>Clave</alias>
+			</field>
+			<field identify="true">
+				<name>nom_loc</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>nom_mun</name>
+				<alias>Municipio</alias>
+			</field>
+			<field>
+				<name>nom_ent</name>
+				<alias>Estado</alias>
+			</field>
+			<field>
+				<name>latitud</name>
+				<alias>Latitud</alias>
+			</field>
+			<field>
+				<name>longitud</name>
+				<alias>Longitud</alias>
+			</field>
+			<field>
+				<name>altitud</name>
+				<alias>Altitud</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+			<field type="tsearch">
+				<name>spvectorref</name>
+			</field>
+		</search>
+		<orderby>
+			<field>clave</field>
+		</orderby>
+	</table>
+	
+<table search="false" identify="true" buffer="true"
+		user_alias="Unidades geohidrológicas" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>unidades_geohidro_s2_250k</name>
+		<alias>c419</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>clave</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+	</table>
+
+<table search="true" identify="true" buffer="true"
+		user_alias="Escurrimiento superficial precipitacion media anual"
+		projects="siccm">
+		<server>servidorsote</server>
+		<database>bdt250</database>
+		<schema>recnat</schema>
+		<name>escu_sup_pre_media_anual250k</name>
+		<alias>c403</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>descripcio</name>
+				<alias>Nombre</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+	
+<table search="true" identify="true" buffer="true"
+		user_alias="Cuencas hidrológicas" projects="siccm">
+		<server>servidorsote</server>
+		<schema>recnat</schema>
+		<database>bdt250</database>
+		<name>cuencas_hidrologicas250k</name>
+		<alias>c402</alias>
+		<geometry>the_geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field>
+				<name>gid</name>
+				<alias>buffer</alias>
+			</field>
+			<field identify="true">
+				<name>rh</name>
+				<alias>Nombre</alias>
+			</field>
+			<field>
+				<name>cuenca</name>
+				<alias>Cuenca</alias>
+			</field>
+			<field>
+				<name>subcuenca</name>
+				<alias>Subcuenca</alias>
+			</field>
+			<field search_display="true" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_Envelope</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>ubicacion</alias>
+			</field>
+			<field search_display="false" query_display="true">
+				<functions>
+					<function order="2">
+						<fname>ST_AsText</fname>
+					</function>
+					<function order="1">
+						<fname>ST_PointOnSurface</fname>
+					</function>
+				</functions>
+				<name>the_geom</name>
+				<alias>coordenada</alias>
+			</field>
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+
+	
+	<table search="false" identify="true" buffer="true" user_alias="Fondo de desastres naturales" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>siccm</schema>
+		<name>ent</name>	
+		<alias>cfdn2012</alias>
+		<geometry>geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>dato_fdn</name>
+				<alias>Dato</alias>
+			</field>
+	
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+	<table search="false" identify="true" buffer="true" user_alias="Riqueza de especies" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>siccm</schema>
+		<name>ent</name>	
+		<alias>cespecies</alias>
+		<geometry>geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>dato_esp</name>
+				<alias>Dato</alias>
+			</field>
+	
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+		<table search="false" identify="true" buffer="true" user_alias="Emisiones de contaminantes atmosféricos por fuentes móviles" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>siccm</schema>
+		<name>ent</name>	
+		<alias>cemision_co</alias>
+		<geometry>geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>dato_emision</name>
+				<alias>Dato</alias>
+			</field>
+	
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+		<table search="false" identify="true" buffer="true" user_alias="Precipitacion Media 2012" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>siccm</schema>
+		<name>ent</name>	
+		<alias>cprecip_2012</alias>
+		<geometry>geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>dato_precip</name>
+				<alias>Dato</alias>
+			</field>
+	
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+		<table search="false" identify="true" buffer="true" user_alias="Declaratorias de desastre natural" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>siccm</schema>
+		<name>ent</name>	
+		<alias>cdesastres</alias>
+		<geometry>geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>dato_desastres</name>
+				<alias>Dato</alias>
+			</field>
+	
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+		<table search="false" identify="true" buffer="true" user_alias="Degradación fisica del suelo" projects="siccm">
+		<server>servidorsote</server>
+		<database>bdgeoestadistico</database>
+		<schema>siccm</schema>
+		<name>ent</name>	
+		<alias>cdegradacion_fis</alias>
+		<geometry>geom</geometry>
+		<projection>900913</projection>
+		<resolution>
+			<min>0.298582141</min>
+			<max>4891.969809375</max>
+		</resolution>
+		<fields>
+			<field identify="true">
+				<name>gid</name>
+				<alias>ID</alias>
+			</field>
+			<field identify="true">
+				<name>dato_degradacionfis</name>
+				<alias>Dato</alias>
+			</field>
+	
+		</fields>
+		<search>
+			<!-- el primer field segun definido aqui es el obligatorio -->
+			<field type="tsearch">
+				<name>spvector</name>
+			</field>
+		</search>
+	</table>
+</tables>
